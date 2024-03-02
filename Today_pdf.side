@@ -1,0 +1,56 @@
+{
+  "id": "7546709d-5359-4bc8-869a-b3dfffa67fab",
+  "version": "2.0",
+  "name": "Today_pdf",
+  "url": "https://www.sciencedirect.com",
+  "tests": [{
+    "id": "3bc36361-eae7-4b95-aeb2-8479694afffa",
+    "name": "Untitled",
+    "commands": [{
+      "id": "242c44ec-d382-4be7-8fa8-e6468d506385",
+      "comment": "",
+      "command": "open",
+      "target": "/science/article/pii/S2090123220300540",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2301b4e-d323-4236-8447-029422dfcde5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2827825a-fe9c-4f5b-9970-646cd39157cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RelatedContentPanelItem:nth-child(2) > .buttons .anchor-text",
+      "targets": [
+        ["css=.RelatedContentPanelItem:nth-child(2) > .buttons .anchor-text", "css:finder"],
+        ["xpath=//div[@id='recommended-articles']/ul/li[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6814",
+      "windowTimeout": 2000
+    }, {
+      "id": "7aa87a16-9474-435f-be2a-6853aac37482",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6814}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "563fc11c-87c3-4739-983c-bc8bb607b635",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3bc36361-eae7-4b95-aeb2-8479694afffa"]
+  }],
+  "urls": ["https://www.sciencedirect.com/"],
+  "plugins": []
+}
